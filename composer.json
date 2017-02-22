@@ -1,8 +1,12 @@
 {
-    "name": "gstt/laravel-achievements",
-    "description": "Achievements for Laravel 5.3+",
+    "name": "rrrhys/laravel-achievements",
+    "description": "Achievements for Laravel 5.3+, forked.",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Rhys Williams",
+            "email": "rrrhys@gmail.com"
+        },
         {
             "name": "Gabriel Simonetti",
             "email": "simonettigo@gmail.com"

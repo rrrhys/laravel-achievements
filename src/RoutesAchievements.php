@@ -5,6 +5,9 @@ namespace Gstt\Achievements;
 trait RoutesAchievements
 {
 
+    public function addPost($instance, $post){
+        $instance->addPostToAchiever($this, $post);
+    }
     /**
      * Adds a specified amount of points to the achievement.
      *
