@@ -24,7 +24,7 @@ class CreateAchievementsTables extends Migration
         });
         Schema::create('achievement_progress', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->integer('post_id');
+            $table->integer('post_id')->nullable()->default(null);
             $table->unsignedInteger('achievement_id');
             $table->morphs('achiever');
             $table->unsignedInteger('points')->default(0);
