@@ -65,6 +65,10 @@ class AchievementProgress extends Model
         return $this->belongsto('Gstt\Achievements\Model\AchievementDetails', 'achievement_id');
     }
 
+    public function post(){
+        return $this->hasOne('App\Post');
+    }
+
     /**
      * Checks if the achievement has been unlocked.
      *

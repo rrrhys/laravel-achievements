@@ -99,6 +99,13 @@ abstract class Achievement
         }
     }
 
+    public function addPostToAchiever($achiever, $post)
+    {
+        $progress = $this->getOrCreateProgressForAchiever($achiever);
+            $progress->post_id = $post->id;
+            $progress->save();
+    }
+
     /**
      * Sets a specified amount of points to the achievement.
      *
